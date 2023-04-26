@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tsc && npm run lint && cypress run",
+    "lint": "tslint 'cypress/**/*.ts'"
   },
   "repository": {
     "type": "git",
